@@ -1,0 +1,2213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="./assets/javascript/souceHandler.js" defer></script>
+</head>
+<body>
+
+    <div class="wrapper">
+        <!-- Begin: Header Section -->
+        <header class="header">
+            <div class="grid wide">
+                <!-- Begin: Navbar Section -->
+                <nav class="navbar header__navbar d-md-none d-sm-none">
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item navbar__link">
+                            <a href="">Kênh Người Bán</a>
+                        </li>
+                        <li class="navbar__list-item navbar__link">
+                            <a href="">Trở thành Người bán Shopee</a>
+                        </li>
+                        <li class="navbar__list-item navbar__link">
+                            <a href="">Tải ứng dụng</a>
+                            <!-- Begin: Navbar QR code -->
+                            <ul class="navbar__qr navbar__dropdown">
+                                <div class="navbar__qr-overlay navbar__dropdown-overlay">
+                                    <a href="https://shopee.vn/web" target="_blank">
+                                        <img src="./assets/images/header/qr-code.png" class="navbar__qr-img" alt="">
+                                    </a>
+                                    <div class="navbar__qr-links">
+                                        <li class="navbar__qr-link">
+                                            <a href="https://shopee.vn/web" target="_blank">
+                                                <img src="./assets/images/header/appstore.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="navbar__qr-link">
+                                            <a href="https://shopee.vn/web" target="_blank">
+                                                <img src="./assets/images/header/g-play.png" alt="">
+                                            </a>
+                                        </li>
+                                        <li class="navbar__qr-link">
+                                            <a href="https://shopee.vn/web" target="_blank">
+                                                <img src="./assets/images/header/appgallery.png" alt="">
+                                            </a>
+                                        </li>
+                                    </div>
+                                </div>
+                            </ul>
+                            <!-- End: Navbar QR code -->
+                        </li>
+                        <li class="navbar__list-item navbar__link navbar__social-links">
+                            Kết nối
+                            <a href="https://www.facebook.com/ShopeeVN" target="_blank">
+                                <i class="fab fa-facebook"></i>
+                            </a>
+                            <a href="https://www.instagram.com/Shopee_VN/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>    
+                        </li>
+                    </ul>
+                    <ul class="navbar__list">
+                        <li class="navbar__list-item navbar__list-item--hoverable">
+                            <i class="far fa-bell"></i>
+                            <span>Thông báo</span>
+                            <div class="navbar__dropdown navbar__announcement">
+                                <div class="navbar__dropdown-triangle"></div>
+                                <div class="navbar__dropdown-overlay navbar__announcement-overlay navbar__dropdown--40rem flex flex-column">
+                                    <div class="navbar__announcement-top flex flex-column flex-center">
+                                        <img src="./assets/images/header/announcement-logo.png" alt="" class="navbar__announcement-logo">
+                                        <p class="navbar__announcement-text">Đăng nhập để xem Thông báo</p>
+                                    </div>
+                                    <div class="navbar__announcement-bottom flex">
+                                        <a href="" class="navbar__announcement-link flex flex-center">Đăng ký</a>
+                                        <a href="" class="navbar__announcement-link flex flex-center">Đăng nhập</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="navbar__list-item navbar__list-item--hoverable">
+                            <i class="far fa-question-circle"></i>
+                            <span>Hỗ trợ</span>
+                        </li>
+                        <li class="navbar__list-item navbar__link">
+                            <a href="">Đăng Ký</a>
+                        </li>
+                        <li class="navbar__list-item navbar__link">
+                            <a href="">Đăng Nhập</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- End: Navbar Section -->
+
+                <!-- Begin: Header-bottom Section -->
+                <div class="header__bottom">
+                    <div class="header__bottom-logo d-sm-none d-md-none col-md-2 col-lg-2">
+                        <svg viewBox="0 0 192 65"><g fill-rule="evenodd"><path d="M35.6717403 44.953764c-.3333497 2.7510509-2.0003116 4.9543414-4.5823845 6.0575984-1.4379707.6145919-3.36871.9463856-4.896954.8421628-2.3840266-.0911143-4.6237865-.6708937-6.6883352-1.7307424-.7375522-.3788551-1.8370513-1.1352759-2.6813095-1.8437757-.213839-.1790053-.239235-.2937577-.0977428-.4944671.0764015-.1151823.2172535-.3229831.5286218-.7791994.45158-.6616533.5079208-.7446018.5587128-.8221779.14448-.2217688.3792333-.2411091.6107855-.0588804.0243289.0189105.0243289.0189105.0426824.0333083.0379873.0294402.0379873.0294402.1276204.0990653.0907002.0706996.14448.1123887.166248.1287205 2.2265285 1.7438508 4.8196989 2.7495466 7.4376251 2.8501162 3.6423042-.0496401 6.2615109-1.6873341 6.7308041-4.2020035.5160305-2.7675977-1.6565047-5.1582742-5.9070334-6.4908212-1.329344-.4166762-4.6895175-1.7616869-5.3090528-2.1250697-2.9094471-1.7071043-4.2697358-3.9430584-4.0763845-6.7048539.296216-3.8283059 3.8501677-6.6835796 8.340785-6.702705 2.0082079-.004083 4.0121475.4132378 5.937338 1.2244562.6816382.2873109 1.8987274.9496089 2.3189359 1.2633517.2420093.1777159.2898136.384872.1510957.60836-.0774686.12958-.2055158.3350171-.4754821.7632974l-.0029878.0047276c-.3553311.5640922-.3664286.5817134-.447952.7136572-.140852.2144625-.3064598.2344475-.5604202.0732783-2.0600669-1.3839063-4.3437898-2.0801572-6.8554368-2.130442-3.126914.061889-5.4706057 1.9228561-5.6246892 4.4579402-.0409751 2.2896772 1.676352 3.9613243 5.3858811 5.2358503 7.529819 2.4196871 10.4113092 5.25648 9.869029 9.7292478M26.3725216 5.42669372c4.9022893 0 8.8982174 4.65220288 9.0851664 10.47578358H17.2875686c.186949-5.8235807 4.1828771-10.47578358 9.084953-10.47578358m25.370857 11.57065968c0-.6047069-.4870064-1.0948761-1.0875481-1.0948761h-11.77736c-.28896-7.68927544-5.7774923-13.82058185-12.5059489-13.82058185-6.7282432 0-12.2167755 6.13130641-12.5057355 13.82058185l-11.79421958.0002149c-.59136492.0107446-1.06748731.4968309-1.06748731 1.0946612 0 .0285807.00106706.0569465.00320118.0848825H.99995732l1.6812605 37.0613963c.00021341.1031483.00405483.2071562.01173767.3118087.00170729.0236381.003628.0470614.00554871.0704847l.00362801.0782207.00405483.004083c.25545428 2.5789222 2.12707837 4.6560709 4.67201764 4.7519129l.00576212.0055872h37.4122078c.0177132.0002149.0354264.0004298.0531396.0004298.0177132 0 .0354264-.0002149.0531396-.0004298h.0796027l.0017073-.0015043c2.589329-.0706995 4.6867431-2.1768587 4.9082648-4.787585l.0012805-.0012893.0017073-.0350275c.0021341-.0275062.0040548-.0547975.0057621-.0823037.0040548-.065757.0068292-.1312992.0078963-.1964115l1.8344904-37.207738h-.0012805c.001067-.0186956.0014939-.0376062.0014939-.0565167M176.465457 41.1518926c.720839-2.3512494 2.900423-3.9186779 5.443734-3.9186779 2.427686 0 4.739107 1.6486899 5.537598 3.9141989l.054826.1556978h-11.082664l.046506-.1512188zm13.50267 3.4063683c.014933.0006399.014933.0006399.036906.0008531.021973-.0002132.021973-.0002132.044372-.0008531.53055-.0243144.950595-.4766911.950595-1.0271786 0-.0266606-.000853-.0496953-.00256-.0865936.000427-.0068251.000427-.020262.000427-.0635588 0-5.1926268-4.070748-9.4007319-9.09145-9.4007319-5.020488 0-9.091235 4.2081051-9.091235 9.4007319 0 .3871116.022399.7731567.067838 1.1568557l.00256.0204753.01408.1013102c.250022 1.8683731 1.047233 3.5831812 2.306302 4.9708108-.00064-.0006399.00064.0006399.007253.0078915 1.396026 1.536289 3.291455 2.5833031 5.393601 2.9748936l.02752.0053321v-.0027727l.13653.0228215c.070186.0119439.144211.0236746.243409.039031 2.766879.332724 5.221231-.0661182 7.299484-1.1127057.511777-.2578611.971928-.5423827 1.37064-.8429007.128211-.0968312.243622-.1904632.34346-.2781231.051412-.0452164.092372-.083181.114131-.1051493.468898-.4830897.498124-.6543572.215249-1.0954297-.31146-.4956734-.586228-.9179769-.821744-1.2675504-.082345-.1224254-.154023-.2267215-.214396-.3133151-.033279-.0475624-.033279-.0475624-.054399-.0776356-.008319-.0117306-.008319-.0117306-.013866-.0191956l-.00256-.0038391c-.256208-.3188605-.431565-.3480805-.715933-.0970445-.030292.0268739-.131624.1051493-.14997.1245582-1.999321 1.775381-4.729508 2.3465571-7.455854 1.7760208-.507724-.1362888-.982595-.3094759-1.419919-.5184948-1.708127-.8565509-2.918343-2.3826022-3.267563-4.1490253l-.02752-.1394881h13.754612zM154.831964 41.1518926c.720831-2.3512494 2.900389-3.9186779 5.44367-3.9186779 2.427657 0 4.739052 1.6486899 5.537747 3.9141989l.054612.1556978h-11.082534l.046505-.1512188zm13.502512 3.4063683c.015146.0006399.015146.0006399.037118.0008531.02176-.0002132.02176-.0002132.044159-.0008531.530543-.0243144.950584-.4766911.950584-1.0271786 0-.0266606-.000854-.0496953-.00256-.0865936.000426-.0068251.000426-.020262.000426-.0635588 0-5.1926268-4.070699-9.4007319-9.091342-9.4007319-5.020217 0-9.091343 4.2081051-9.091343 9.4007319 0 .3871116.022826.7731567.068051 1.1568557l.00256.0204753.01408.1013102c.250019 1.8683731 1.04722 3.5831812 2.306274 4.9708108-.00064-.0006399.00064.0006399.007254.0078915 1.396009 1.536289 3.291417 2.5833031 5.393538 2.9748936l.027519.0053321v-.0027727l.136529.0228215c.070184.0119439.144209.0236746.243619.039031 2.766847.332724 5.22117-.0661182 7.299185-1.1127057.511771-.2578611.971917-.5423827 1.370624-.8429007.128209-.0968312.243619-.1904632.343456-.2781231.051412-.0452164.09237-.083181.11413-.1051493.468892-.4830897.498118-.6543572.215246-1.0954297-.311457-.4956734-.586221-.9179769-.821734-1.2675504-.082344-.1224254-.154022-.2267215-.21418-.3133151-.033492-.0475624-.033492-.0475624-.054612-.0776356-.008319-.0117306-.008319-.0117306-.013866-.0191956l-.002346-.0038391c-.256419-.3188605-.431774-.3480805-.716138-.0970445-.030292.0268739-.131623.1051493-.149969.1245582-1.999084 1.775381-4.729452 2.3465571-7.455767 1.7760208-.507717-.1362888-.982582-.3094759-1.419902-.5184948-1.708107-.8565509-2.918095-2.3826022-3.267311-4.1490253l-.027733-.1394881h13.754451zM138.32144123 49.7357905c-3.38129629 0-6.14681004-2.6808521-6.23169343-6.04042014v-.31621743c.08401943-3.35418649 2.85039714-6.03546919 6.23169343-6.03546919 3.44242097 0 6.23320537 2.7740599 6.23320537 6.1960534 0 3.42199346-2.7907844 6.19605336-6.23320537 6.19605336m.00172791-15.67913203c-2.21776751 0-4.33682838.7553485-6.03989586 2.140764l-.19352548.1573553V34.6208558c0-.4623792-.0993546-.56419733-.56740117-.56419733h-2.17651376c-.47409424 0-.56761716.09428403-.56761716.56419733v27.6400724c0 .4539841.10583425.5641973.56761716.5641973h2.17651376c.46351081 0 .56740117-.1078454.56740117-.5641973V50.734168l.19352548.1573553c1.70328347 1.3856307 3.82234434 2.1409792 6.03989586 2.1409792 5.27140956 0 9.54473746-4.2479474 9.54473746-9.48802964 0-5.239867-4.2733279-9.48781439-9.54473746-9.48781439M115.907646 49.5240292c-3.449458 0-6.245805-2.7496948-6.245805-6.1425854 0-3.3928907 2.79656-6.1427988 6.245805-6.1427988 3.448821 0 6.24538 2.7499081 6.24538 6.1427988 0 3.3926772-2.796346 6.1425854-6.24538 6.1425854m.001914-15.5438312c-5.28187 0-9.563025 4.2112903-9.563025 9.4059406 0 5.1944369 4.281155 9.4059406 9.563025 9.4059406 5.281657 0 9.562387-4.2115037 9.562387-9.4059406 0-5.1946503-4.280517-9.4059406-9.562387-9.4059406M94.5919049 34.1890939c-1.9281307 0-3.7938902.6198995-5.3417715 1.7656047l-.188189.1393105V23.2574169c0-.4254677-.1395825-.5643476-.5649971-.5643476h-2.2782698c-.4600414 0-.5652122.1100273-.5652122.5643476v29.2834155c0 .443339.1135587.5647782.5652122.5647782h2.2782698c.4226187 0 .5649971-.1457701.5649971-.5647782v-9.5648406c.023658-3.011002 2.4931278-5.4412923 5.5299605-5.4412923 3.0445753 0 5.516841 2.4421328 5.5297454 5.4630394v9.5430935c0 .4844647.0806524.5645628.5652122.5645628h2.2726775c.481764 0 .565212-.0824666.565212-.5645628v-9.5710848c-.018066-4.8280677-4.0440197-8.7806537-8.9328471-8.7806537M62.8459442 47.7938061l-.0053397.0081519c-.3248668.4921188-.4609221.6991347-.5369593.8179812-.2560916.3812097-.224267.551113.1668119.8816949.91266.7358184 2.0858968 1.508535 2.8774525 1.8955369 2.2023021 1.076912 4.5810275 1.646045 7.1017886 1.6975309 1.6283921.0821628 3.6734936-.3050536 5.1963734-.9842376 2.7569891-1.2298679 4.5131066-3.6269626 4.8208863-6.5794607.4985136-4.7841067-2.6143125-7.7747902-10.6321784-10.1849709l-.0021359-.0006435c-3.7356476-1.2047686-5.4904836-2.8064071-5.4911243-5.0426086.1099976-2.4715346 2.4015793-4.3179454 5.4932602-4.4331449 2.4904317.0062212 4.6923065.6675996 6.8557356 2.0598624.4562232.2767364.666607.2256796.9733188-.172263.035242-.0587797.1332787-.2012238.543367-.790093l.0012815-.0019308c.3829626-.5500403.5089793-.7336731.5403767-.7879478.258441-.4863266.2214903-.6738208-.244985-1.0046173-.459427-.3290803-1.7535544-1.0024722-2.4936356-1.2978721-2.0583439-.8211991-4.1863175-1.2199998-6.3042524-1.1788111-4.8198184.1046878-8.578747 3.2393171-8.8265087 7.3515337-.1572005 2.9703036 1.350301 5.3588174 4.5000778 7.124567.8829712.4661613 4.1115618 1.6865902 5.6184225 2.1278667 4.2847814 1.2547527 6.5186944 3.5630343 6.0571315 6.2864205-.4192725 2.4743234-3.0117991 4.1199394-6.6498372 4.2325647-2.6382344-.0549182-5.2963324-1.0217793-7.6043603-2.7562084-.0115337-.0083664-.0700567-.0519149-.1779185-.1323615-.1516472-.1130543-.1516472-.1130543-.1742875-.1300017-.4705335-.3247898-.7473431-.2977598-1.0346184.1302162-.0346012.0529875-.3919333.5963776-.5681431.8632459"></path></g></svg>
+                    </div>
+                    <div class="header__search col-sm-8 col-md-8 col-lg-8">
+                        <div class="header__search-container">
+                            <input class="header__search-input" type="text" placeholder="Hoàn xu cuối tuần">
+                            <button class="header__search-btn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            <ul class="header__search-history">
+                                <li class="header__search-history-item">
+                                    <a href="" class="flex">
+                                        <span>Siêu sale thương hiệu</span>
+                                        <img class="header__search-history-logo" src="./assets/images/header/search-hitstory-title-logo.png" alt="">
+                                    </a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="flex">dây</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="flex">daddario</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="flex">elixir</a>
+                                </li>
+                                <li class="header__search-history-item">
+                                    <a href="" class="flex">ban phim</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <ul class="header__search-categories d-sm-none d-md-none">
+                            <li>
+                                <a href="">Bánh Trung Thu</a>
+                            </li>
+                            <li>
+                                <a href="">Áo Khoác</a>
+                            </li>
+                            <li>
+                                <a href="">Váy</a>
+                            </li>
+                            <li>
+                                <a href="">Quần</a>
+                            </li>
+                            <li>
+                                <a href="">Tai Nghe</a>
+                            </li>
+                            <li>
+                                <a href="">Bông Tẩy Trang</a>
+                            </li>
+                            <li>
+                                <a href="">Túi Xách Nữ</a>
+                            </li>
+                            <li>
+                                <a href="">Chân Váy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header__shopping-cart col-sm-2 col-md-2 col-lg-2">
+                        <div class="shopping__cart-overlay">
+                            <i class="fas fa-shopping-cart"></i>
+                            <div class="cart__dropdown d-sm-none d-md-none navbar__dropdown navbar__dropdown--40rem">
+                                <div class="shopping__cart-triangle navbar__dropdown-triangle"></div>
+                                <div class="cart__dropdown-overlay navbar__dropdown-overlay flex flex-column flex-center">
+                                    <img src="./assets/images/header/cart-dropdown-logo.png" alt="" class="cart__dropdown-logo">
+                                    <p class="navbar__dropdown-text">Chưa Có Sản Phẩm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="header__user d-sm-flex d-md-flex col-sm-2 col-md-2 d-none">
+                        <div class="header__user-overlay">
+                            <i class="fas fa-user text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Header-bottom Section -->
+            </div>
+        </header>
+        <!-- End: Header Section -->
+
+        <!-- Begin: Content Section -->
+        <div class="content">
+            <!-- Begin: Banner Section -->
+            <div class="banner grid wide">
+                <a href="" class="slider banner__item">
+                    <div class="slider__img"></div>
+                </a>
+                <a href="" class="banner__right d-sm-none d-md-none banner__item">
+                    <div class="banner__right-ad-1"></div>
+                    <div class="banner__right-ad-2"></div>
+                </a>
+            </div>
+            <!-- End: Banner Section -->
+
+            <!-- Begin: Utilities Section -->
+            <div class="utilities grid wide">
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Tech Zone - Siêu Thị Điện Tử</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Gì Cũng Rẻ - Từ 1K </p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Hoàn Xu 10% - Đơn Từ 0Đ</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Nạp Thẻ, Hóa Đơn & E-voucher</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Shopee Số Gì Đây</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Freeship Xtra</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Hàng Hiệu -50%</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Hàng Quốc Tế - Deal Đồng Giá</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Shopee Premium</p>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="utilities__item">
+                        <div class="utilities__logo"></div>
+                        <p class="utilities__desc">Yên Tâm Mua Hàng</p>
+                    </div>
+                </a>
+            </div>
+            <!-- End: Utilities Section -->
+
+            <!-- Coupon Section -->
+            <div class="coupon grid wide d-sm-none"></div>
+
+            <!-- Begin: Promotion Section -->
+            <div class="promotion d-sm-none grid wide">
+                <div class="promotion__overlay">
+                    <div class="promotion__title">
+                        <img src="./assets/images/content/promotion/promotion-top-img.png" alt="" class="promotion__title-image">
+                    </div>
+                    <div class="promotion__content flex">
+                        <div class="promotion__products">
+                            <div class="promotion__top flex">
+                                <div class="promotion__top-name">Sản phẩm bán chạy</div>
+                                <a href="" class="promotion__top-more flex">Xem Thêm <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                            <div class="promotion__details flex">
+                                <a href="">
+                                    <div class="promotion__detail flex flex-column">
+                                        <div class="promotion__detail-img" style = "background-image: url('./assets/images/content/promotion/promotion-product1.png');"></div>
+                                        <p class="promotion__detail-price"><sup>đ</sup>20.000</p>
+                                        <div class="promotion__sale">
+                                            <div class="promotion__sale-overlay">
+                                                <div class="promotion__sale-badge"  data-sale-price="48% Giảm"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="ml-1px">
+                                    <div class="promotion__detail flex flex-column">
+                                        <div class="promotion__detail-img" style = "background-image: url('./assets/images/content/promotion/promotion-product2.png');"></div>
+                                        <p class="promotion__detail-price"><sup>đ</sup>20.000</p>
+                                        <div class="promotion__sale">
+                                            <div class="promotion__sale-overlay">
+                                                <div class="promotion__sale-badge"  data-sale-price="50% Giảm"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="ml-1px">
+                                    <div class="promotion__detail flex flex-column">
+                                        <div class="promotion__detail-img" style = "background-image: url('./assets/images/content/promotion/promotion-product3.png');"></div>
+                                        <p class="promotion__detail-price"><sup>đ</sup>20.000</p>
+                                        <div class="promotion__sale">
+                                            <div class="promotion__sale-overlay">
+                                                <div class="promotion__sale-badge"  data-sale-price="44% Giảm"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="promotion__brands">
+                            <div class="promotion__top flex">
+                                <div class="promotion__top-name">Thương hiệu nổi bật</div>
+                                <a href="" class="promotion__top-more flex">Xem Thêm <span><i class="fas fa-chevron-right"></i></span></a>
+                            </div>
+                            <div class="promotion__details flex">
+                                <a href="">
+                                    <div class="promotion__detail flex flex-column">
+                                        <div class="promotion__detail-img" style = "background-image: url('./assets/images/content/promotion/promotion-brand1.png');"></div>
+                                        <div class="promotion__brand-img flex flex-center">
+                                            <img src="./assets/images/content/promotion/promotion-brand1-logo.png" alt="">
+                                        </div>
+                                        <p class="promotion__detail-price">Giảm đến 50%</p>
+                                        <div class="promotion__sale">
+                                            <div class="promotion__sale-overlay">
+                                                <div class="promotion__sale-badge"  data-sale-price="50% Giảm"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="ml-1px">
+                                    <div class="promotion__detail flex flex-column">
+                                        <div class="promotion__detail-img" style = "background-image: url('./assets/images/content/promotion/promotion-brand2.png');"></div>
+                                        <div class="promotion__brand-img flex flex-center">
+                                            <img src="./assets/images/content/promotion/promotion-brand2-logo.png" alt="">
+                                        </div>
+                                        <p class="promotion__detail-price">Giảm đến 30%</p>
+                                        <div class="promotion__sale">
+                                            <div class="promotion__sale-overlay">
+                                                <div class="promotion__sale-badge"  data-sale-price="30% Giảm"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="" class="ml-1px">
+                                    <div class="promotion__detail flex flex-column">
+                                        <div class="promotion__detail-img" style = "background-image: url('./assets/images/content/promotion/promotion-brand3.png');"></div>
+                                        <div class="promotion__brand-img flex flex-center">
+                                            <img src="./assets/images/content/promotion/promotion-brand3-logo.png" alt="">
+                                        </div>
+                                        <p class="promotion__detail-price">Giảm đến 50%</p>
+                                        <div class="promotion__sale">
+                                            <div class="promotion__sale-overlay">
+                                                <div class="promotion__sale-badge"  data-sale-price="50% Giảm"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="promotion__bottom">
+                        <img src="./assets/images/content/promotion/promotion-bottom-background.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- End: Promotion Section -->
+
+            <!-- Begin: Category Section -->
+            <div class="category flex flex-column grid wide">
+                <p class="category__heading">Danh mục</p>
+                <div class="category__items flex">
+                    <a href="" class="category__item-overlay">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Thời Trang Nam</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Điện Thoại & Phụ Kiện</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Thiết Bị Điện Tử</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Máy Tính & Laptop</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Máy Ảnh & Máy Quay Phim</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Đồng Hồ</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Giày Dép Nam</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Thiết Bị Điện Gia Dụng</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Thể Thao & Du Lịch</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Ô Tô & Xe Máy & Xe Đạp</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Thời Trang Nữ</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Mẹ & Bé</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Nhà Cửa & Đời Sống</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Sắc Đẹp</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Sức Khỏe</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Giày Dép Nữ</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none d-md-none d-lg-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Túi Ví Nữ</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none d-md-none d-lg-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Phụ Kiện & Trang Sức Nữ</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none d-md-none d-lg-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Bách Hóa Online</div>
+                        </div>
+                    </a>
+                    <a href="" class="category__item-overlay d-sm-none d-md-none d-lg-none">
+                        <div class="category__item">
+                            <div class="category__item-img"></div>
+                            <div class="category__item-name">Nhà Sách Online</div>
+                        </div>
+                    </a>
+                    <div class="category__items-next list--next">
+                        <i class="fas fa-chevron-right"></i>
+                    </div>   
+                </div>
+            </div>
+            <!-- End: Category Section -->
+
+            <!-- Begin: Sale Section -->
+            <div class="sale grid wide">
+                <div class="sale__top">
+                    <div class="sale__top-title"></div>
+                    <a href="" class="sale__top-viewall">
+                        Xem Tất Cả <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="sale__bottom">
+                    <div class="sale__bottom-items">
+                        <a href="">
+                            <div class="sale__bottom-item">
+                                <div class="sale__bottom-item-img"></div>
+                                <div class="sale__bottom-desc">
+                                    <div class="sale__bottom-item-price"><span>đ</span> 229.000</div>
+                                    <div class="sale__bottom-item-sold">
+                                        <div class="sale__meter" style="--sold: 80%"></div>
+                                        <p class="sale__bottom-item-sold-text">Đã bán 80</p>
+                                    </div>
+                                </div>
+                                <div class="promotion__sale">
+                                    <div class="promotion__sale-overlay">
+                                        <div class="promotion__sale-badge"  data-sale-price="50% Giảm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sale__bottom-item">
+                                <div class="sale__bottom-item-img"></div>
+                                <div class="sale__bottom-desc">
+                                    <div class="sale__bottom-item-price"><span>đ</span> 229.000</div>
+                                    <div class="sale__bottom-item-sold">
+                                        <div class="sale__meter" style="--sold: 10%"></div>
+                                        <p class="sale__bottom-item-sold-text">Đã bán 10</p>
+                                    </div>
+                                </div>
+                                <div class="promotion__sale">
+                                    <div class="promotion__sale-overlay">
+                                        <div class="promotion__sale-badge"  data-sale-price="50% Giảm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sale__bottom-item">
+                                <div class="sale__bottom-item-img"></div>
+                                <div class="sale__bottom-desc">
+                                    <div class="sale__bottom-item-price"><span>đ</span> 229.000</div>
+                                    <div class="sale__bottom-item-sold">
+                                        <div class="sale__meter" style="--sold: 2%"></div>
+                                        <p class="sale__bottom-item-sold-text">Đã bán 2</p>
+                                    </div>
+                                </div>
+                                <div class="promotion__sale">
+                                    <div class="promotion__sale-overlay">
+                                        <div class="promotion__sale-badge"  data-sale-price="50% Giảm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="">
+                            <div class="sale__bottom-item">
+                                <div class="sale__bottom-item-img"></div>
+                                <div class="sale__bottom-desc">
+                                    <div class="sale__bottom-item-price"><span>đ</span> 229.000</div>
+                                    <div class="sale__bottom-item-sold">
+                                        <div class="sale__meter" style="--sold: 50%"></div>
+                                        <p class="sale__bottom-item-sold-text">Đã bán 50</p>
+                                    </div>
+                                </div>
+                                <div class="promotion__sale">
+                                    <div class="promotion__sale-overlay">
+                                        <div class="promotion__sale-badge"  data-sale-price="50% Giảm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class="d-sm-none" href="">
+                            <div class="sale__bottom-item">
+                                <div class="sale__bottom-item-img"></div>
+                                <div class="sale__bottom-desc">
+                                    <div class="sale__bottom-item-price"><span>đ</span> 229.000</div>
+                                    <div class="sale__bottom-item-sold">
+                                        <div class="sale__meter" style="--sold: 20%"></div>
+                                        <p class="sale__bottom-item-sold-text">Đã bán 20</p>
+                                    </div>
+                                </div>
+                                <div class="promotion__sale">
+                                    <div class="promotion__sale-overlay">
+                                        <div class="promotion__sale-badge"  data-sale-price="50% Giảm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <a class= "d-sm-none d-md-none d-lg-none" href="">
+                            <div class="sale__bottom-item">
+                                <div class="sale__bottom-item-img"></div>
+                                <div class="sale__bottom-desc">
+                                    <div class="sale__bottom-item-price"><span>đ</span> 229.000</div>
+                                    <div class="sale__bottom-item-sold">
+                                        <div class="sale__meter" style="--sold: 60%"></div>
+                                        <p class="sale__bottom-item-sold-text">Đã bán 60</p>
+                                    </div>
+                                </div>
+                                <div class="promotion__sale">
+                                    <div class="promotion__sale-overlay">
+                                        <div class="promotion__sale-badge"  data-sale-price="50% Giảm"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                        <div class="list--next">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                        
+                    </div>
+                </div>
+                
+            </div>
+            <!-- End: Sale Section -->
+
+            <!-- Begin: Recommendation Section -->
+            <div class="recommendation grid wide">
+                <div class="recommendation__overlay">
+                    <div class="recommendation__top">
+                        <div class="recommendation__top-title flex flex-center">Gợi ý hôm nay</div>
+                        <div class="recommendation__top-event flex flex-center">
+                            <img src="./assets/images/content/recommendation/event.png" alt="">
+                        </div>
+                    </div>
+                    <div class="recommendation__bottom">
+                        <div class="recommendation__items">
+                            <a href="" class="recommendation__item card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__body-title">Áo sweater form rộng Unisex cô gái khói siêu xinh PT5, Áo hoodie nỉ không mũ phong cách oversize streetwear</div>
+                                    <div class="card__body-content">
+                                        <div class="card__body-text"><small>đ</small> 35.000</div>
+                                        <div class="card__body-subtext d-sm-none">Đã bán 67</div>
+                                    </div>
+                                </div>
+                                <div class="recommendation__item-similar">
+                                    <p>Tìm sản phẩm tương tự</p>
+                                </div>
+                            </a>
+
+                            <a href="" class="recommendation__item card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__body-title">Áo sweater form rộng Unisex cô gái khói siêu xinh PT5, Áo hoodie nỉ không mũ phong cách oversize streetwear</div>
+                                    <div class="card__body-content">
+                                        <div class="card__body-text">đ 35.000</div>
+                                        <div class="card__body-subtext d-sm-none">Đã bán 67</div>
+                                    </div>
+                                </div>
+                                 <div class="recommendation__item-similar">
+                                    <p>Tìm sản phẩm tương tự</p>
+                                </div>
+                            </a>
+
+                            <a href="" class="recommendation__item card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__body-title">Áo sweater form rộng Unisex cô gái khói siêu xinh PT5, Áo hoodie nỉ không mũ phong cách oversize streetwear</div>
+                                    <div class="card__body-content">
+                                        <div class="card__body-text">đ 35.000</div>
+                                        <div class="card__body-subtext d-sm-none">Đã bán 67</div>
+                                    </div>
+                                </div>
+                                 <div class="recommendation__item-similar">
+                                    <p>Tìm sản phẩm tương tự</p>
+                                </div>
+                            </a>
+
+                            <a href="" class="recommendation__item d-sm-none card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__body-title">Áo sweater form rộng Unisex cô gái khói siêu xinh PT5, Áo hoodie nỉ không mũ phong cách oversize streetwear</div>
+                                    <div class="card__body-content">
+                                        <div class="card__body-text">đ 35.000</div>
+                                        <div class="card__body-subtext d-sm-none">Đã bán 67</div>
+                                    </div>
+                                </div>
+                                 <div class="recommendation__item-similar">
+                                    <p>Tìm sản phẩm tương tự</p>
+                                </div>
+                            </a>
+
+                            <a href="" class="recommendation__item d-sm-none card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__body-title">Áo sweater form rộng Unisex cô gái khói siêu xinh PT5, Áo hoodie nỉ không mũ phong cách oversize streetwear</div>
+                                    <div class="card__body-content">
+                                        <div class="card__body-text">đ 35.000</div>
+                                        <div class="card__body-subtext d-sm-none">Đã bán 67</div>
+                                    </div>
+                                </div>
+                                 <div class="recommendation__item-similar">
+                                    <p>Tìm sản phẩm tương tự</p>
+                                </div>
+                            </a>
+
+                            <a href="" class="recommendation__item d-sm-none d-md-none d-lg-none card">
+                                <div class="card__image"></div>
+                                <div class="card__body">
+                                    <div class="card__body-title">Áo sweater form rộng Unisex cô gái khói siêu xinh PT5, Áo hoodie nỉ không mũ phong cách oversize streetwear</div>
+                                    <div class="card__body-content">
+                                        <div class="card__body-text">đ 35.000</div>
+                                        <div class="card__body-subtext d-sm-none">Đã bán 67</div>
+                                    </div>
+                                </div>
+                                 <div class="recommendation__item-similar">
+                                    <p>Tìm sản phẩm tương tự</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="recommendation__bottom-more flex flex-center">Xem Thêm</div>
+                    </div>
+                </div>
+            </div>
+            <!-- End: Recommendation Section -->
+        </div>  
+        <!-- End: Content: Section -->
+
+        <!-- Begin: Footer Section -->
+        <footer class="footer">
+            <div class="footer__overlay footer__top d-sm-none grid wide">
+                <!-- Begin: Footer Ads Section -->
+                <div class="footer__ad-container">
+                    <div class="footer__ad">
+                        <div class="footer__ad-heading">SHOPEE - GÌ CŨNG CÓ, MUA HẾT Ở SHOPEE</div>
+                        <div class="footer__ad-content">
+                            Shopee - ứng dụng mua sắm trực tuyến
+                            thú vị, tin cậy, an toàn và miễn phí! Shopee là nền tảng giao
+                            dịch trực tuyến hàng đầu ở Đông Nam Á, Việt Nam,
+                            <a href="">Singapore</a>, <a href="">Malaysia</a>,
+                            <a href="">Indonesia</a>, <a href="">Thái Lan</a>,
+                            <a href="">Philipin</a>, <a href="">Đài loan</a> và 
+                            <a href="">Brazil</a>. Với sự đảm bảo của Shopee, bạn
+                            sẽ mua hàng trực tuyến an tâm và nhanh chóng hơn bao giờ 
+                            hết!
+                        </div>
+                    </div>
+                    <br>
+                    <div class="footer__ad">
+                        <div class="footer__ad-heading mt-1rem">MUA SẮM VÀ BÁN HÀNG ONLINE ĐƠN GIẢN, NHANH CHÓNG VÀ AN TOÀN</div>
+                        <div class="footer__ad-content">
+                            Nếu bạn đang tìm kiếm một trang web để mua và bán hàng trực tuyến 
+                            thì Shopee.vn là một sự lựa chọn tuyệt vời dành cho bạn. Bản chất 
+                            của Shopee là một social E-commerce platform - nền tảng trang web 
+                            <b>thương mại điện tử</b> tích hợp mạng xã hội. Điều này cho phép người mua 
+                            và người bán hàng dễ dàng tương tác, trao đổi thông tin về sản phẩm và 
+                            chương trình khuyến mãi của shop. Nhờ nền tảng đó, việc mua bán trên 
+                            Shopee trở nên nhanh chóng và đơn giản hơn. Bạn có thể trò chuyện trực 
+                            tiếp với nhà bán hàng để hỏi trực tiếp về mặt hàng cần mua. Còn nếu bạn 
+                            muốn tìm mua những dòng sản phẩm chính hãng, uy tín, 
+                            <a href="" class="text-black">Shopee Mall</a> chính 
+                            là sự lựa chọn lí tưởng dành cho bạn. Để bạn có thể dễ dàng khi tìm hiểu 
+                            và sử dụng sản phẩm, <a href="" class="text-black">Shopee Blog</a> - trang blog thông tin chính thức của 
+                            Shopee - sẽ giúp bạn có thể tìm được cho mình các kiến thức về xu hướng 
+                            thời trang, review công nghệ, mẹo làm đẹp, tin tức tiêu dùng và deal giá 
+                            tốt bất ngờ.
+                            <br>
+                            <br>
+                            Đến với Shopee, cơ hội để trở thành một nhà bán hàng dễ dàng hơn 
+                            bao giờ hết. Chỉ với vài thao tác trên ứng dụng, bạn đã có thể 
+                            đăng bán ngay những sản phẩm của mình. Không những thế, các nhà 
+                            bán hàng có thể tự <a href="">tạo chương trình khuyến mãi trên Shopee</a> để thu 
+                            hút người mua với những sản phẩm có mức giá hấp dẫn. Khi đăng nhập 
+                            tại Shopee Kênh người bán, bạn có thể dễ dàng phân loại sản phẩm, 
+                            theo dõi đơn hàng, chăm sóc khách hàng và cập nhập ngay các hoạt 
+                            động của shop.
+                        </div>
+                    </div>
+                    <br>
+                    
+                    <div class="footer__ad">
+                        <div class="footer__ad-heading">TẢI ỨNG DỤNG SHOPEE NGAY ĐỂ MUA BÁN ONLINE MỌI LÚC, MỌI NƠI</div>
+                        <div class="footer__ad-content">Ưu điểm của ứng dụng Shopee là cho 
+                            phép bạn mua và bán hàng mọi lúc, mọi nơi. Bạn có thể tải ứng 
+                            dụng Shopee cũng như đăng sản phẩm bán hàng một cách nhanh chóng 
+                            và tiện lợi. Ngoài ra, ứng dụng Shopee còn có những ưu điểm 
+                            sau: - Giao diện thân thiện, đơn giản, dễ sử dụng. Bạn sẽ dễ 
+                            dàng thấy được ngay những sản phẩm nổi bật cũng như dễ dàng tìm 
+                            đến các ô tìm kiếm, giỏ hàng hoặc tính năng chat liền tay. 
+                            - Ứng dụng tích hợp công nghệ quản lý đơn mua và bán hàng tiện 
+                            lợi trên cùng một tài khoản. Bạn sẽ vừa là người mua hàng, vừa 
+                            là người bán hàng rất linh hoạt, dễ dàng. - Cập nhập thông tin 
+                            khuyến mãi, <a href="">Shopee flash sale</a> nhanh chóng và liên tục. 
+                            Tại Shopee, bạn có thể lấy các <a href="">mã giảm giá Shopee</a> và 
+                            <a href="">mã miễn phí vận chuyển toàn quốc</a>. Bên cạnh đó, Shopee cũng sẽ có những 
+                            chiến dịch khuyến mãi lớn hằng năm như <a href="">Siêu hội mua sắm 4.4</a>, 
+                            <a href="">Shopee 9.9 sale</a>, <a href="">Shopee 10.10 sale</a>, 
+                            <a href="">Shopee 11.11 sale</a>, <a href="">Shopee 12.12 sale</a>, 
+                            <a href="">Shopee Tết Sale</a>. Đây là thời điểm để người mua hàng có thể 
+                            nhanh tay chọn ngay cho mình những mặt hàng ưa thích với 
+                            mức giá giảm kỉ lục.</div>
+                    </div>
+                    <br>
+    
+                    <div class="footer__ad">
+                        <div class="footer__ad-heading">
+                            MUA HÀNG HIỆU CAO CẤP GIÁ TỐT TẠI SHOPEE
+                        </div>
+                        <div class="footer__ad-content">
+                            Bên cạnh <a href="">Shopee Premium</a>, Shopee còn có rất nhiều 
+                            khuyến mãi khủng cho <a href="">hàng hiệu giảm đến 50%</a>. Cộng với 
+                            mã giao hàng miễn phí, Shopee cũng có các mã giảm giá 
+                            được phân phối mỗi tháng từ rất nhiều gian hàng chính hãng 
+                            tham gia chương trình khuyến mãi này. Bên cạnh đó, Shopee 
+                            còn tập hợp rất nhiều thương hiệu đình đám được các nhà bán 
+                            lẻ uy tín phân phối bán trên Shopee, đem đến cho bạn sự lựa 
+                            chọn đa dạng, từ các hãng mỹ phẩm nổi tiếng hàng đầu như 
+                            <a href="">Kiehl's</a>, <a href="">Fresh</a>, 
+                            <a href="">The Ordinary</a>, <a href="">Foreo</a>, 
+                            <a href="">Transino</a>, <a href="">SK-II</a>... 
+                            Đến những thương hiệu công nghệ nổi tiếng như 
+                            <a href="">camera hành trình Gopro</a>, 
+                            loa <a href="">Marshall</a>, <a href="">bảng vẽ điện tử Huion</a>
+                            , <a href="">máy quay DJI Osmo Pocket</a>, 
+                            <a href="">loa Harman Kardon</a>, <a href="">Razer  </a>... 
+    
+    
+                        </div>
+                    </div>
+                    <br>
+    
+                    <div class="footer__ad">
+                        <div class="footer__ad-heading">
+                            MUA HÀNG CHÍNH HÃNG TỪ CÁC THƯƠNG HIỆU LỚN VỚI SHOPEE
+                        </div>
+                        <div class="footer__ad-content">
+                            Mua hàng trên Shopee luôn là một trải nghiệm ấn tượng. 
+                            Dù bạn đang có nhu cầu mua bất kỳ mặt hàng <a href="">thời trang nam</a>, 
+                            thời trang nữ, <a href="">đồng hồ</a>, điện thoại, 
+                            <a href="">nước rửa tay khô</a> hay <a href="">khẩu trang N95</a> thì Shopee cũng sẽ đảm bảo cung cấp cho bạn những 
+                            sản phẩm ưng ý. Bên cạnh đó, Shopee cũng có sự tham gia của 
+                            các thương hiệu hàng đầu thế giới ở đa dạng nhiều lĩnh vực khác nhau. 
+                            Trong đó có thể kể đến Samsung, OPPO, 
+                            Xiaomi, Innisfree, Unilever, 
+                            P&G, Biti’s,...Các thương hiệu này hiện cũng đã có cửa hàng 
+                            chính thức trên Shopee Mall với hàng trăm mặt hàng chính hãng, 
+                            được cập nhập liên tục. Là một kênh bán hàng uy tín, Shopee luôn cam 
+                            kết mang lại cho khách hàng những trải nghiệm mua sắm online giá rẻ, 
+                            an toàn và tin cậy. Mọi thông tin về người bán và người mua đều được 
+                            bảo mật tuyệt đối. Các hoạt động giao dịch thanh toán tại Shopee 
+                            luôn được đảm bảo diễn ra nhanh chóng, an toàn. Một vấn đề nữa khiến 
+                            cho các khách hàng luôn quan tâm đó chính là mua hàng trên Shopee 
+                            có đảm bảo không. Shopee luôn cam kết mọi sản phẩm trên Shopee, 
+                            đặc biệt là Shopee Mall đều là những sản phẩm chính hãng, đầy đủ 
+                            tem nhãn, bảo hành từ nhà bán hàng. Ngoài ra, Shopee bảo vệ người mua 
+                            và người bán bằng cách giữ số tiền giao dịch đến khi người mua xác nhận 
+                            đồng ý với đơn hàng và không có yêu cầu khiếu nại, 
+                            trả hàng hay hoàn tiền nào. 
+                            Thanh toán sau đó sẽ được chuyển đến cho người bán.
+                            <br>
+                            <br>
+                            Đến với Shopee ngay hôm nay để mua hàng online giá 
+                            rẻ và trải nghiệm dịch vụ chăm sóc khách hàng tuyệt 
+                            vời tại đây. Đặc biệt khi mua sắm trên Shopee Mall, 
+                            bạn sẽ được miễn phí vận chuyển, giao hàng tận nơi và 
+                            7 ngày miễn phí trả hàng. Ngoài ra, khách hàng có thể 
+                            sử dụng <a href="">Shopee Xu</a> để đổi lấy mã giảm giá có giá trị cao 
+                            và voucher dịch vụ hấp dẫn. Tiếp đến là <a href="">Shopee Mum's Club</a>, 
+                            <a href="">Shopee Beauty Club</a> và <a href="">Shopee Book Club</a> với 
+                            các ưu đãi độc quyền từ các thương hiệu lớn có những 
+                            khách hàng đã đăng ký làm thành viên. Hãy truy cập 
+                            ngay Shopee.vn hoặc tải ngay ứng dụng Shopee về điện 
+                            thoại ngay hôm nay!
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Footer Ads Section -->
+
+                <!-- Begin: Footer Categories Section -->
+                <div class="footer__category grid wide d-sm-none d-md-none">
+                    <div class="footer__category-overlay">
+                        <div class="footer__category-title">Danh Mục</div>
+                        <div class="footer__category-section">
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="footer__category-container col-lg-3">
+                                <div class="footer__category-name">Thời Trang Nam</div>
+                                <div class="footer__category-items">
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Khoác</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Vest và Blazer</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Hoodie, Áo Len & Áo Nỉ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Jeans</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Dài/Quần Âu</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Quần Short</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Áo Ba Lỗ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Lót</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Ngủ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Bộ</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Vớ/Tất</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Trang Phục Truyền Thống</div>
+                                    </a>
+                                    <a href="">
+                                        <div class="footer__category-item">Đồ Hóa Trang</div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- End: Footer Categories Section -->
+            </div>
+            <div class="footer__bottom d-sm-none">
+                <div class="footer__bottom-container grid wide flex">
+                    <!-- Begin: Footer Customer Care -->
+                    <div class="footer__list footer__customer-care flex flex-column">
+                        <div class="footer__list-name">Chăm sóc khách hàng</div>
+                        <a href="" class="footer__list-link">
+                            Trung Tâm Trợ Giúp
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Shopee Blog
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Shopee Mall
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Hướng Dẫn Mua Hàng
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Hướng Dẫn Bán Hàng
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Thanh Toán
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Shopee Xu
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Vận Chuyển
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Trả Hàng & Hoàn Tiền
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Chăm Sóc Khách Hàng
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Chính Sách Bảo Hành
+                        </a>
+                    </div>
+                    <!-- End: Footer Customer Care -->
+
+                    <!-- Begin: Footer About Section -->
+                    <div class="footer__list footer__about flex flex-column">
+                        <div class="footer__list-name">Về Shopee</div>
+                        <a href="" class="footer__list-link">
+                            Giới Thiệu Về Shopee Việt Nam
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Tuyển Dụng
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Điều Khoản Shopee
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Chính Sách Bảo Mật
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Chính Hãng
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Kênh Người Bán
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Flash Sales
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Chương Trình Tiếp Thị Liên Kết Shopee
+                        </a>
+                        <a href="" class="footer__list-link">
+                            Liên Hệ Với Truyền Thông
+                        </a>
+                    </div>
+                    <!-- End: Footer About Section -->
+
+                    <!-- Begin: Footer Payment & Shipping -->
+                    <div class="footer__list footer__payment-shipping flex flex-column">
+                        <div class="footer__payment">
+                            <div class="footer__list-name">Thanh Toán</div>
+                            <div class="footer__link-container flex">
+                                <div class="footer__list-link">
+                                    <div class="footer__payment-img footer__payment-visa"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__payment-img footer__payment-mastercard"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__payment-img footer__payment-jcb"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__payment-img footer__payment-amex"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__payment-img footer__payment-cod"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__payment-img footer__payment-installment"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__payment-img footer__payment-shopeepay"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__shipping">
+                            <div class="footer__list-name">Đơn Vị Vận Chuyển</div>
+                            <div class="footer__link-container flex">
+                                <div class="footer__list-link">
+                                    <div class="footer__shipping-img footer__shipping-shopee-express"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__shipping-img footer__shipping-ghtk"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__shipping-img footer__shipping-ghn"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__shipping-img footer__shipping-viettel-post"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__shipping-img footer__shipping-vnpost"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__shipping-img footer__shipping-jnt"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__shipping-img footer__shipping-grab-express"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__shipping-img footer__shipping-ninja-van"></div>
+                                </div>
+                                <div class="footer__list-link">
+                                    <div class="footer__shipping-img footer__shipping-best-express"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: Footer Payment & Shipping -->
+
+                    <!-- Begin: Footer Social Medias Section -->
+                    <div class="footer__list footer__following flex flex-column">
+                        <div class="footer__list-name">Theo Dõi Chúng Tôi Trên</div>
+                        <a href="" class="footer__list-link flex">
+                            <i class="fab fa-facebook-square"></i> Facebook
+                        </a>
+                        <a href="" class="footer__list-link flex">
+                            <i class="fab fa-instagram-square"></i> Instagram
+                        </a>
+                        <a href="" class="footer__list-link flex">
+                            <i class="fab fa-linkedin"></i> LinkedIn
+                        </a>
+                    </div>
+                    <!-- End: Footer Social Medias Section -->
+
+                    <!-- Begin: Footer Download Links -->
+                    <div class="footer__list d-md-none d-lg-none footer__download">
+                        <div class="footer__list-name">Tải ứng dụng Shopee ngay thôi</div>
+                        <div class="footer__link-container flex">
+                            <a href="" class="footer__list-link">
+                                <img src="./assets/images/footer/footer-qr.png" class="footer__download-qr" alt="">
+                            </a>
+                            <div class="footer__list-link flex flex-column flex-space-around">
+                                <a href="">
+                                    <img src="./assets/images/header/appstore.png" class="footer__download-platform" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/header/g-play.png" class="footer__download-platform" alt="">
+                                </a>
+                                <a href="">
+                                    <img src="./assets/images/header/appgallery.png" class="footer__download-platform" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End: Footer Download Links -->
+                    
+                </div>
+                
+                <!-- Begin: Footer Credit Section -->
+                <div class="footer__bottom-credit grid wide flex">
+                    <div class="footer__credit-left">
+                        <p class="footer__credit-text">© 2021 Shopee. Tất cả các quyền được bảo lưu.</p>
+                    </div>
+                    <div class="footer__credit-right flex">
+                        <p>Quốc Gia & Khu Vực: </p>
+                        <a href="" class="footer__credit-nation">Singapore</a>
+                        <a href="" class="footer__credit-nation">Indonesia</a>
+                        <a href="" class="footer__credit-nation">Đài Loan</a>
+                        <a href="" class="footer__credit-nation">Thái Lan</a>
+                        <a href="" class="footer__credit-nation">Malaysia</a>
+                        <a href="" class="footer__credit-nation">Việt Nam</a>
+                        <a href="" class="footer__credit-nation">Philippines</a>
+                        <a href="" class="footer__credit-nation">Brazil</a>
+                        <a href="" class="footer__credit-nation">México</a>
+                        <a href="" class="footer__credit-nation">Colombia</a>
+                        <a href="" class="footer__credit-nation">Chile</a>
+                    </div>
+                </div>
+                <!-- End: Footer Credit Section -->
+            </div>
+            <div class="footer__address">
+                <div class="footer__address-container grid wide">
+                    <div class="footer__address-top">
+                        <a href="" class="footer__policy">Chính Sách Bảo Mật</a>
+                        <a href="" class="footer__policy">Quy Chế Hoạt Động</a>
+                        <a href="" class="footer__policy">Chính Sách Vận Chuyển</a>
+                        <a href="" class="footer__policy">Chính Sách Trả Hàng Và Hoàn Tiền</a>
+                    </div>
+                    <div class="footer__address-middle flex flex-center">
+                        <a href="" class="footer__registered footer__registered-bct"></a>
+                        <a href="" class="footer__registered footer__registered-bct"></a>
+                        <a href="" class="footer__registered footer__registered-print"></a>
+                    </div>
+                    <div class="footer__address-bottom">
+                        Công ty TNHH Shopee
+                        <br>
+                        <br>
+                        Địa chỉ: Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường Liễu Giai, Phường Ngọc Khánh, Quận Ba Đình, Thành phố Hà Nội, Việt Nam. Tổng đài hỗ trợ: 19001221 - Email: cskh@hotro.shopee.vn
+                        <br>
+                        Chịu Trách Nhiệm Quản Lý Nội Dung: Nguyễn Đức Trí - Điện thoại liên hệ: 024 73081221 (ext 4678)
+                        <br>
+                        Mã số doanh nghiệp: 0106773786 do Sở Kế hoạch & Đầu tư TP Hà Nội cấp lần đầu ngày 10/02/2015
+                        <br>
+                        © 2015 - Bản quyền thuộc về Công ty TNHH Shopee
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div class="shopee__floating-icon">
+            <a href="">
+                <div class="shopee__floating-icon-wrapper">
+                </div>
+            </a>
+        </div>
+    </div>
+
+    
+
+
+</body>
+</html>
